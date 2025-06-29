@@ -1,0 +1,34 @@
+[
+  {
+    "id": "daniel-figueira",
+    "titulo": "Daniel Figueira",
+    "descricaoCompleta": "<p><strong>Ator, Cantor e Dublador</strong></p><p><strong>Data:</strong> 10 de Julho de 2025</p><p><strong>Horário:</strong> 14h às 16h</p><p><strong>Local:</strong> Palco Principal</p><br><p>Daniel Figueira é um talentoso ator, cantor e dublador brasileiro. Conhecido por seus trabalhos em séries, filmes e como dublador de grandes produções internacionais.</p><br><p><strong>Atividades:</strong></p><p>Sessão de autógrafos</p><p>Meet & Greet</p><p>Apresentação musical</p><p>Bate-papo sobre dublagem</p>",
+    "data": "2025-07-10T14:00:00",
+    "local": "Palco Principal",
+    "imagemUrl": "./img/Daniel-Figueira.png"
+  },
+  {
+    "id": "tom-welling",
+    "titulo": "Tom Welling",
+    "descricaoCompleta": "<p><strong>Clark Kent em \"Smallville\"</strong></p><p><strong>Data:</strong> 10 de Julho de 2025</p><p><strong>Horário:</strong> 16h às 18h</p><p><strong>Local:</strong> Auditório Principal</p><br><p>Tom Welling ficou mundialmente famoso interpretando Clark Kent na série \"Smallville\" por 10 temporadas. Também atuou em filmes como \"Mais Barato por Dúzia\" e dirigiu episódios de \"Smallville\".</p><br><p><strong>Atividades:</strong></p><p>Painel exclusivo sobre Smallville</p><p>Sessão de perguntas e respostas</p><p>Sessão de fotos</p><p>Autógrafos</p>",
+    "data": "2025-07-10T16:00:00",
+    "local": "Auditório Principal",
+    "imagemUrl": "./img/Tom-Welling.png"
+  },
+  {
+    "id": "adrian-tatini",
+    "titulo": "Adrian Tatini",
+    "descricaoCompleta": "<p><strong>Cantor e Dublador</strong></p><p><strong>Data:</strong> 10 de Julho de 2025</p><p><strong>Horário:</strong> 10h às 12h</p><p><strong>Local:</strong> Espaço Cultural</p><br><p>Adrian Tatini é cantor e dublador, conhecido por dublar diversos personagens em animes, filmes e séries. Sua voz marcante conquistou fãs em todo o Brasil.</p><br><p><strong>Atividades:</strong></p><p>Workshop de dublagem</p><p>Apresentação musical</p><p>Conversa sobre a carreira</p><p>Sessão de autógrafos</p>",
+    "data": "2025-07-10T10:00:00",
+    "local": "Espaço Cultural",
+    "imagemUrl": "./img/Adrian-Tatini.png"
+  },
+  {
+    "id": "campeonato-lol",
+    "titulo": "Campeonato de League of Legends",
+    "descricaoCompleta": "<p><strong>Mostre suas habilidades no Rift!</strong></p><p><strong>Data:</strong> 10 de Julho de 2025</p><p><strong>Horário:</strong> 09h às 19h</p><p><strong>Local:</strong> Arena eSports</p><br><p>Participe do nosso emocionante campeonato de League of Legends. Inscrições abertas para equipes de 5 jogadores. Premiação para os vencedores e muita emoção garantida!</p><br><p><strong>Formato:</strong> Eliminação Simples</p><p><strong>Inscrição:</strong> No local, até 1 hora antes do início.</p>",
+    "data": "2025-07-10T09:00:00",
+    "local": "Arena eSports",
+    "imagemUrl": "img/favicon.png"
+  }
+]
