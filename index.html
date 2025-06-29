@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="stylem.css">
+    <title>PalhasGeek 2025</title>
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>PalhasGeek 2025</h1>
+
+        <!-- Botão do menu mobile -->
+        <button class="menu-toggle" onclick="alternarMenu()">☰ Menu</button>
+
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="#sobre" onclick="fecharMenu()">Sobre</a></li>
+                <li><a href="#informacoes" onclick="fecharMenu()">Informações</a></li>
+                <li><a href="#atracoes" onclick="fecharMenu()">Atrações</a></li>
+                <li><a href="#inscricao" onclick="fecharMenu()">Inscrição</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contador regressivo funcional -->
+        <section class="contador">
+            <h2>Faltam:</h2>
+            <div class="contagem">
+                <div><span id="dias">0</span>
+                    <p>Dias</p>
+                </div>
+                <div><span id="horas">0</span>
+                    <p>Horas</p>
+                </div>
+                <div><span id="minutos">0</span>
+                    <p>Minutos</p>
+                </div>
+                <div><span id="segundos">0</span>
+                    <p>Segundos</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <h2>Sobre o Evento</h2>
+            <p>O PalhasGeek 2025 é o encontro definitivo para todos os apaixonados por games, cultura pop, tecnologia e
+                universo geek!</p>
+            <p>Realizado em Palhano-CE, o evento traz um dia inteiro de atrações incríveis, incluindo concursos de
+                cosplay, campeonatos de eSports, workshops, palestras e muito mais.</p>
+        </section>
+
+        <section id="informacoes" class="info">
+            <h2>Informações</h2>
+            <p><strong>Data:</strong> 10 de Julho de 2025</p>
+            <p><strong>Horário:</strong> das 8h às 20h</p>
+            <p><strong>Local:</strong> Quadra Poliesportiva da EEMTI Francisco de Moura, Palhano - CE</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d994.0327347602857!2d-37.961285!3d-4.747287!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b9a1b049eae501%3A0x7aef9777b2a83d4d!2sQuadra!5e0!3m2!1spt-BR!2sus!4v1745762920965!5m2!1spt-BR!2sus"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section id="atracoes" class="atracoes">
+            <h2>Atrações</h2>
+            <div class="cards">
+                <div class="card" onclick="mostrarDetalhes('daniel')">
+                    <img src="./img/Daniel-Figueira.png" alt="Daniel Figueira">
+                    
+                </div>
+
+                <div class="card" onclick="mostrarDetalhes('tom')">
+                    <img src="./img/Tom-Welling.png" alt="Tom Welling">
+                    
+                </div>
+
+                <div class="card" onclick="mostrarDetalhes('adrian')">
+                    <img src="./img/Adrian-Tatini.png"
+                        alt="Adrian Tatini">
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="inscricao" class="inscricao">
+            <h2>Inscrição</h2>
+            <p>Não fique de fora! Faça sua inscrição agora mesmo:</p>
+            <a href="inscricao_page.html" class="botao">Inscrever-se</a>
+        </section>
+    </main>
+
+    <!-- Modal para mostrar detalhes das atrações -->
+    <div id="modal" class="modal">
+        <div class="modal-conteudo">
+            <span class="modal-fechar" onclick="fecharModal()">&times;</span>
+            <h2 id="modal-titulo">Título</h2>
+            <div id="modal-descricao">Descrição aqui</div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Siga-nos nas redes sociais:</p>
+        <div class="social">
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.youtube.com/">YouTube</a>
+            <a href="https://www.tiktok.com/">TikTok</a>
+        </div>
+        <p>&copy; 2025 PalhasGeek | Evento fictício para fins acadêmicos.</p>
+    </footer>
+
+    <script src="main.js"></script>
+       
+
+</body>
+
+</html>

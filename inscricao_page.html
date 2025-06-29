@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon.png" type="image/png">
+    <title>Inscrição - PalhasGeek 2025</title>
+    <link rel="stylesheet" href="stylei.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Inscrição PalhasGeek 2025</h1>
+        <a href="index.html" class="btn-voltar">← Voltar</a>
+    </header>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Faça sua Inscrição!</h2>
+
+            <div class="info-text">
+                <h3>🎮 O que você terá acesso:</h3>
+                <p>Ao se inscrever, você poderá participar de <strong>todas as atrações</strong> do evento: painéis
+                    exclusivos, sessões de autógrafos, meet & greet, workshops, campeonatos de eSports, concursos de
+                    cosplay e muito mais!</p>
+            </div>
+
+            <form id="inscricaoForm">
+                <div class="form-group">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <div class="error-message">Por favor, digite seu nome completo</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message">Por favor, digite um e-mail válido</div>
+                </div>
+
+                <button type="submit" class="btn-submit">Confirmar Inscrição</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de sucesso -->
+    <div id="modalSucesso" class="modal">
+        <div class="modal-content">
+            <h3>🎉 Inscrição Realizada com Sucesso!</h3>
+            <p><strong>Parabéns!</strong> Sua inscrição no PalhasGeek 2025 foi confirmada.</p>
+            <p>Em breve você receberá um e-mail de confirmação com todas as informações do evento.</p>
+            <p><strong>Nos vemos em 10 de julho de 2025!</strong></p>
+            <button class="btn-ok" onclick="voltarPagina()">OK</button>
+            <button class="btn-ok" onclick="fecharModal()" style="background: #6c757d;">Fechar</button>
+        </div>
+    </div>
+
+    <script src="inscricao.js"></script>
+</body>
+
+</html>

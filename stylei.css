@@ -1,0 +1,225 @@
+/* Resetando tudo pra começar do zero */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background: #6a1b9a;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho do site */
+.header {
+    background-color: #ffe600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.header h1 {
+    padding: 20px;
+    flex: 1;
+    color: #6a1b9a;
+}
+
+.btn-voltar {
+    background: #e91e63;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-voltar:hover {
+    background: #c2185b;
+}
+
+/* Container principal */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Formulário de inscrição */
+.form-container {
+    background: white;
+    color: #333;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-container h2 {
+    color: #e91e63;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.info-text {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border-left: 4px solid #e91e63;
+}
+
+.info-text h3 {
+    color: #e91e63;
+    margin-bottom: 10px;
+}
+
+.info-text p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Campos do formulário */
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #e91e63;
+}
+
+/* Mensagens de erro */
+.error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+.form-group.error input {
+    border-color: #dc3545;
+}
+
+.form-group.error .error-message {
+    display: block;
+}
+
+/* Botão de submissão */
+.btn-submit {
+    width: 100%;
+    background: #e91e63;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+    background: #c2185b;
+}
+
+.btn-submit:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Modal de sucesso */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    margin: 15% auto;
+    padding: 40px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 15px;
+    text-align: center;
+    color: #333;
+}
+
+.modal h3 {
+    color: #28a745;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.modal p {
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.btn-ok {
+    background: #28a745;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.btn-ok:hover {
+    background: #218838;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .btn-voltar {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}

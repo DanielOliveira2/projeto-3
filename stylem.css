@@ -1,0 +1,371 @@
+/* Resetando tudo pra começar do zero */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background: #6a1b9a;
+    color: white;
+
+}
+
+/* Cabeçalho do site */
+.header {
+    background-color: #ffe600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Espaça entre título e menu */
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* Título principal no cabeçalho */
+.header h1 {
+    padding: 20px;
+    /* Dá uma respirada no título */
+    flex: 1;
+}
+
+/* Botão do menu mobile (hambúrguer) */
+.menu-toggle {
+    display: none;
+    background: #e91e63;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+/* Menu de navegação */
+.menu {
+    margin: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    /* Tira as bolinhas da lista */
+    padding: 10px;
+    background-color: #e91e63;
+    /* Rosa vibrante */
+    border-radius: 30px;
+    /* Deixa o menu com cantos arredondados */
+}
+
+/* Cada item do menu */
+.menu ul li {
+    display: inline;
+    /* Um do lado do outro */
+    margin: 0 15px;
+}
+
+/* Links do menu */
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    /* Tira o sublinhado */
+    font-weight: bold;
+}
+
+/* Quando passa o mouse em cima do link */
+.menu ul li a:hover {
+    text-decoration: underline;
+    /* Coloca sublinhado */
+}
+
+/* Seção do contador de dias */
+.contador {
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* Layout dos números do contador */
+.contagem {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Espaço entre eles */
+    margin-top: 15px;
+}
+
+/* Cada bloquinho de número */
+.contagem div {
+    background: #e91e63;
+    padding: 20px 10px;
+    border-radius: 8px;
+    width: 100px;
+    /* largura fixa */
+    text-align: center;
+
+}
+
+/* Número grande dentro dos bloquinhos */
+.contagem span {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Estilo padrão das seções principais */
+main section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Títulos das seções (h2) */
+section h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Seções de "Sobre" e "Informações" */
+.sobre,
+.info {
+    background: #e91e63;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    /* Não passa disso */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #0000001a;
+    /* Sombra leve pra dar destaque */
+    margin-bottom: 40px;
+}
+
+.sobre p {
+    text-align: justify;
+}
+
+/* Mapa do Google Maps */
+.info iframe {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Seção das atrações */
+.atracoes {
+    background: #ffe600;
+}
+
+/* Container que segura os cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    /* Quebra linha se precisar */
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Cada card de atração */
+.card {
+    background: white;
+    width: 250px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra leve */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color: #333;
+}
+
+/* Efeito hover nos cards */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagens dos cards */
+.card img {
+    width: 100%;
+    /* Preenche o card */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+
+/* Modal para mostrar detalhes */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.modal-conteudo {
+    background: white;
+    margin: 5% auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 15px;
+    color: #333;
+    position: relative;
+}
+
+.modal-fechar {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #e91e63;
+}
+
+.modal h2 {
+    color: #e91e63;
+    margin-bottom: 20px;
+}
+
+/* Seção de inscrição */
+.inscricao {
+    background: #e91e63;
+    color: white;
+}
+
+/* Botão de inscrição */
+.botao {
+    background: #ffe600;
+    color: #5b1fa6;
+    padding: 15px 30px;
+    border-radius: 30px;
+    /* Deixa o botão arredondado */
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Efeito quando passa o mouse no botão */
+.botao:hover {
+    background: #ffd700;
+    /* Amarelo um pouco mais escuro */
+}
+
+/* Rodapé da página */
+.footer {
+    background: #1f1f1f;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Links das redes sociais */
+.social a {
+    margin: 0 10px;
+    color: #ffe600;
+    text-decoration: none;
+}
+
+/* Efeito nos links das redes ao passar o mouse */
+.social a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade: deixar o site legal no celular */
+@media (max-width: 768px) {
+
+    /* Mostra o botão do menu mobile */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Esconde o menu normal no mobile */
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #e91e63;
+        margin: 0;
+        z-index: 999;
+    }
+
+    /* Quando o menu está ativo */
+    .menu.ativo {
+        display: block;
+    }
+
+    /* Ajusta o menu mobile */
+    .menu ul {
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .menu ul li {
+        display: block;
+        margin: 0;
+    }
+
+    .menu ul li a {
+        display: block;
+        padding: 15px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Ajusta o layout do contador */
+    .contagem {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Reduz tamanho dos quadrados do contador */
+    .contagem div {
+        width: 100px;
+        min-height: 90px;
+        padding: 15px 5px;
+    }
+
+    /* Aumenta o número do contador */
+    .contagem span {
+        font-size: 1.8em;
+    }
+
+    /* Aumenta o tamanho dos títulos */
+    section h2 {
+        font-size: 30px;
+    }
+
+    /* Aumenta a fonte geral da página */
+    body {
+        font-size: 18px;
+    }
+
+    /* Deixa o botão de inscrição maior */
+    .botao {
+        font-size: 18px;
+        padding: 18px 35px;
+    }
+
+    /* Aumenta a fonte do rodapé */
+    .footer {
+        font-size: 16px;
+    }
+
+    /* Aumenta a fonte dos links das redes sociais */
+    .social a {
+        font-size: 18px;
+    }
+
+    /* Ajusta modal no mobile */
+    .modal-conteudo {
+        margin: 10% auto;
+        width: 95%;
+    }
+}
